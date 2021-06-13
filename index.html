@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Navigation Menu -->
@@ -32,13 +33,15 @@
     <section class="block block--dark block--skewed-left">
       <div class="container grid grid--1x2">
         <header class="block__header hero__content">
-          <h1 class="block__heading">Cloud Hosting for Pros</h1>
+          <h1 data-aos="fade-right" class="block__heading">
+            Cloud Hosting for Pros
+          </h1>
           <p class="hero__tagline">
             Deploy your websites in less than 60 seconds.
           </p>
           <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
         </header>
-        <picture>
+        <picture data-aos="zoom-in">
           <source
             type="image/webp"
             srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
@@ -53,7 +56,7 @@
     </section>
 
     <!-- Domain Block -->
-    <section class="block container block-domain">
+    <section data-aos="fade-up" class="block container block-domain">
       <header class="block__header">
         <h2>Starting at $9 per month</h2>
         <p>
@@ -80,7 +83,7 @@
     </section>
 
     <!-- Plans -->
-    <section class="block container block-plans">
+    <section data-aos="fade-up" class="block container block-plans">
       <grid class="grid grid--1x3">
         <div class="plan">
           <div class="card card--secondary">
@@ -155,7 +158,7 @@
         </p>
       </header>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -168,7 +171,7 @@
           </p>
           <a href="#" class="link-arrow">Learn More</a>
         </div>
-        <picture>
+        <picture data-aos="zoom-in-left">
           <source
             type="image/webp"
             srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
@@ -334,7 +337,7 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="block">
+    <section class="block" data-aos="zoom-in">
       <header class="block__header">
         <h2>What our Customers are Saying</h2>
         <p>
@@ -466,6 +469,11 @@
       </div>
     </footer>
 
+    <!-- JS Scripts -->
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
